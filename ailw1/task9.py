@@ -4,7 +4,12 @@ def zamena(a):
         if c=='а':
             c='о'
             after += c
+        elif c == 'о':
+            c = 'а'
+            after+= c
         else:
-            after+= 'a'
+            after += c
+            continue
+
     return(after)
-print(zamena('аоаоаоаоаоаоаао'))
+print(zamena(input()))
